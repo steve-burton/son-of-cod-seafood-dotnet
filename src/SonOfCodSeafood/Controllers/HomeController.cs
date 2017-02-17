@@ -10,9 +10,23 @@ namespace SonOfCodSeafood.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(User user)
+        {
+            db.Users.Add(user);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
