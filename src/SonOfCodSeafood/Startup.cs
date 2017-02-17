@@ -14,16 +14,17 @@ namespace SonOfCodSeafood
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app)
         {
-            loggerFactory.AddConsole();
-
-            if (env.IsDevelopment())
+            app.UseMvc(routes =>
             {
-                app.UseDeveloperExceptionPage();
-            }
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
 
             app.Run(async (context) =>
             {
