@@ -45,7 +45,7 @@ namespace SonOfCodSeafood.Controllers
                     NormalizedName = roleName.ToUpper()
                 });
                 _db.SaveChanges();
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Roles");
             }
             catch
             {
