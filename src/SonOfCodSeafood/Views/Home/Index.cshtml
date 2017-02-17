@@ -3,23 +3,18 @@
     ViewBag.Title = "Son of Cod Seafood";
 }
 
+<h2>Welcome to Son of Cod Seafood</h2>
+
+
+
 <div class="row">
-    <div class="col s6 column-left">
-        <h2>Welcome to Son of Cod Seafood</h2>
-        <form asp-controller="Home" asp-action="Create" method="post" enctype="multipart/form-data">
-            <div class="input-field">
-                <input asp-for="Email">
-                <span asp-validation-for="Email" class="red-text"></span>
-                <label asp-for="Email"></label>
-            </div>
-            <div class="input-field">
-                <input asp-for="Seafood" name="Seafood">
-                <label asp-for="Seafood">What's your favorite seafood?</label>
-            </div>
-            <input type="submit" class="waves-effect waves-light btn light-blue darken-1" value="Add email" />
-        </form>
+    <div class="col s6">
+        <h5>We sell the best seafood in the Northwest</h5>
+        <p>Seafood mahi-mahi triplespine queen triggerfish, "ribbon eel deep sea eel wormfish." Fingerfish ladyfish, kingfish sand stargazer mail-cheeked fish blackfish Ragfish pirarucu luderick Bombay duck, porcupinefish candiru blacktip reef shark. Walleye Sevan trout stonefish mackerel shark glassfish shiner flagfish yellowbanded perch hairtail Oregon chub.
+        </p>
+        <p><a asp-controller="Home" asp-action="Create">Click here </a>if you'd like to recieve our newsletter</p>
     </div>
     <div class="col s6 column-right">
-        <img src="~/img/seafood.jpg" />
+        <img src="~/Content/image/seafood.jpg" />
     </div>
 </div>

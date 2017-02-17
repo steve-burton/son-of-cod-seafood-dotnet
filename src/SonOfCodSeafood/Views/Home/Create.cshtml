@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Son of Cod Seafood";
+}
+
+@model SonOfCodSeafood.Models.PublicUser
+
+<div class="row">
+    <div class="col s8">
+            <h5>To recieve our weekly newsletter, simply enter your email address in the form below.</h5>
+        <form asp-controller="Home" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="red-text">
+                <div class="row">
+                    <div class="input-field col s8">
+                        <input asp-for="Email">
+                        <span asp-validation-for="Email" class="red-text"></span>
+                        <label asp-for="Email"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input asp-for="Seafood" name="Seafood">
+                    <label asp-for="Seafood">What's your favorite seafood?</label>
+                </div>
+                <input type="submit" class="waves-effect waves-light btn light-blue darken-1" value="Add email" />
+            </div>
+            
+        </form>
+    </div>       
+</div>
