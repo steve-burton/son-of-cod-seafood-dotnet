@@ -24,7 +24,8 @@ namespace SonOfCodSeafood.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var publicUsers = _db.PublicUsers.ToList();
+            return View(publicUsers);
         }
 
         public IActionResult Signup()

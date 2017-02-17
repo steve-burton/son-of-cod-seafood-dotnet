@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SonOfCodSeafood.Models
 {
-    [Table("Users")]
-    public class User
+    [Table("PublicUsers")]
+    public class PublicUser
     {
         [Key]
-        public int UserId { get; set; }
+        public int PublicUserId { get; set; }
         public string Email { get; set; }
         public string Seafood { get; set; }
     }

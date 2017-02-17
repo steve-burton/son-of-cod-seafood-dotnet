@@ -9,7 +9,7 @@ namespace SonOfCodSeafood.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<PublicUser> PublicUsers { get; set; }
         public ApplicationDbContext()
         {
 
