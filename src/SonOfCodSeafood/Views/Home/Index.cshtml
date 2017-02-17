@@ -1,4 +1,22 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Son of Cod Seafood";
 }
+
+<div class="row">
+    <div class="col s6 column-left">
+        <h2>Welcome to Son of Cod Seafood</h2>
+        <div class="input-field">
+            <input asp-for="Email">
+            <span asp-validation-for="Email" class="red-text"></span>
+            <label asp-for="Email"></label>
+        </div>
+        <div class="input-field">
+            <input asp-for="Seafood" name="Seafood">
+            <label asp-for="Seafood">What's your favorite seafood?</label>
+        </div>
+    </div>
+    <div class="col s6 column-right">
+        <img src="~/img/seafood.jpg" />
+    </div>
+</div>
