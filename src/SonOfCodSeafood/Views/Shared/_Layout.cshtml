@@ -54,7 +54,7 @@
                 </ul>
                 <a href="#" data-activates="hamburger" class="button-collapse right"><i class="material-icons">menu</i></a>
                 <ul class="side-nav" id="hamburger">
-                    <li><a asp-controller="Photos" asp-action="Index">Photos</a></li>
+                    @*<li><a asp-controller="Photos" asp-action="Index">Photos</a></li>*@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>

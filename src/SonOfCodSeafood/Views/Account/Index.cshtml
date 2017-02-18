@@ -2,15 +2,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Login";
 }
+@using SonOfCodSeafood.Models
+@model List<PublicUser>
 
-<h2>Authentication with Identity</h2>
+    <h2>Mailing List</h2>
 
-@if (User.Identity.IsAuthenticated)
-{
-    <h4>Hello @User.Identity.Name</h4>
-    <h5>Here is your list of email signup users:</h5>
-}
-else
-{
-    <p>Unauthenticated...</p>
-}
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h4>Hello @User.Identity.Name</h4>
+        <h5>Here's your list of email signup users:</h5>
+
+        @foreach (var user in Model)
+        {
+            <p>@user.Email <br /> @user.Seafood</p>
+
+        }
+    }
+    else
+    {
+        <p>Unauthenticated...</p>
+    }
