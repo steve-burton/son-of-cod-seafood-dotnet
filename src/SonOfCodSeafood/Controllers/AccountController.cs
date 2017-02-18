@@ -22,6 +22,11 @@ namespace SonOfCodSeafood.Controllers
             _signInManager = signInManager;
             _db = db;
         }
+
+        // ### For Controller Test ### //
+        //public AccountController()
+        //{
+        //}
         public IActionResult Index()
         {
             var publicUsers = _db.PublicUsers.ToList();

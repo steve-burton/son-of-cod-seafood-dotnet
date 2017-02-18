@@ -23,6 +23,11 @@ namespace SonOfCodSeafood.Controllers
             _db = db;
         }
 
+        // ### For Controller Test ### //
+        //public RolesController()
+        //{
+        //}
+
         public IActionResult Index()
         {
             List<IdentityRole> roles = _db.Roles.ToList();

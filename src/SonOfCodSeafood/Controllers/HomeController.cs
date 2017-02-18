@@ -21,6 +21,11 @@ namespace SonOfCodSeafood.Controllers
             _db = db;
         }
 
+        // ### For Controller Test ### //
+        //public HomeController()
+        //{
+        //}
+
         public IActionResult Index()
         {
             return View();
