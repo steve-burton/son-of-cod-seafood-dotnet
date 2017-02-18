@@ -59,6 +59,8 @@
                     {
                         <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
                         <li><a asp-controller="Account" asp-action="Index">View Mail List</a></li>
+                        <li><a asp-controller="Roles" asp-action="Create">Create roles</a></li>
+                        <li><a asp-controller="Roles" asp-action="Assign">Assign roles</a></li>
 
                     }
                     else
@@ -74,7 +76,9 @@
 
 
     <div class="container">
-        @RenderBody()
+        <div class="light-background">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>

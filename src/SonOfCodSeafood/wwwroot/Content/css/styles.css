@@ -1,3 +1,47 @@
 ﻿div.column-right img {
-    width: 400px;
+    width: 100%;
+}
+
+body {
+    background-image: url("../image/dark-wood.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.light-background {
+    /*background: radial-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.1));*/
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px 40px 40px 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+div.col a {
+    color: rgb(48, 77, 124);
+}
+
+div.col a:hover {
+    font-size: 1.11em;
+    color: rgb(37, 56, 86);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1px 2px 1px 2px;
+    border-radius: 3px;
+    text-shadow: rgb(65, 65, 65);
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 5px 10px 20px;
+    border-radius: 15px;
+    
+}
+
+div.input-field label {
+    color: rgb(69, 69, 69);
 }
